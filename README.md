@@ -9,3 +9,20 @@ Steamworks Web API wrapper for .NET using Refit.
 ## About
 
 TBD
+
+## Example
+
+```csharp
+using Nefarius.Steam.PartnerWebApi;
+using Nefarius.Steam.PartnerWebApi.Models;
+
+using Refit;
+
+string apiKey = "get api key from config file";
+
+ISteamUser steamApi = RestService.For<ISteamUser>("https://partner.steam-api.com");
+
+AppOwnershipResponse ownership = await steamApi.CheckAppOwnership(apiKey, "76561197992990756", "774361");
+
+bool ownsApp = ownership.AppOwnership.OwnsApp;
+```
