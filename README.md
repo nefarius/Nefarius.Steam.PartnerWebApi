@@ -16,7 +16,7 @@ Currently only covers parts of the `ISteamUser` interface.
 
 ## API Access
 
-This API requires a special [publisher web API key](https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys) you can only obtain as a partner. This is **not the same** as the [Steam Web API Key](https://steamcommunity.com/dev/apikey) anyone with a Steam account can register. Do not expect this API to work with such a key.
+This API requires a special [publisher web API key](https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys) you can only obtain as a partner. This is **not the same** as the [Steam Web API Key](https://steamcommunity.com/dev/apikey) anyone with a Steam account can register. Do not expect this library to work with such a key.
 
 ## Example
 
