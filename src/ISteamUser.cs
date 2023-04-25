@@ -1,4 +1,6 @@
-﻿using Nefarius.Steam.PartnerWebApi.Models;
+﻿using System.Diagnostics.CodeAnalysis;
+
+using Nefarius.Steam.PartnerWebApi.Models;
 
 using Refit;
 
@@ -7,6 +9,7 @@ namespace Nefarius.Steam.PartnerWebApi;
 /// <summary>
 ///     Used to access information and interact with users.
 /// </summary>
+[SuppressMessage("ReSharper", "UnusedMember.Global")]
 public interface ISteamUser
 {
     /// <summary>
@@ -77,4 +80,39 @@ public interface ISteamUser
     [Get("/ISteamUser/GetDeletedSteamIDs/v1/")]
     Task<DeletedSteamIdsResponse> GetDeletedSteamIDs([AliasAs("key")] string apiKey,
         [AliasAs("rowversion")] ulong rowVersion = 0);
+
+    // TODO: finish me!
+    [Get("/ISteamUser/GetFriendList/v1/")]
+    Task<dynamic> GetFriendList([AliasAs("key")] string apiKey, [AliasAs("steamid")] string steamId,
+        [AliasAs("relationship")] FriendListRelationship relationship = FriendListRelationship.Friend);
+
+    /// <summary>
+    ///     Gets player ban details.
+    /// </summary>
+    /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
+    /// <param name="steamIds">One or more Steam IDs to query.</param>
+    /// <returns>An instance of <see cref="PlayerBansResponse" />.</returns>
+    [Get("/ISteamUser/GetPlayerBans/v1/")]
+    Task<PlayerBansResponse> GetPlayerBans([AliasAs("key")] string apiKey,
+        [AliasAs("steamids")] [Query(CollectionFormat.Csv)] string[] steamIds);
+
+    /// <summary>
+    ///     Returns basic profile information for a list of 64-bit Steam IDs.
+    /// </summary>
+    /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
+    /// <param name="steamIds">One or more Steam IDs to query.</param>
+    /// <returns>An instance of <see cref="PlayerSummariesResponse" />.</returns>
+    [Get("/ISteamUser/GetPlayerSummaries/v2/")]
+    Task<PlayerSummariesResponse> GetPlayerSummaries([AliasAs("key")] string apiKey,
+        [AliasAs("steamids")] [Query(CollectionFormat.Csv)] string[] steamIds);
+
+    /// <summary>
+    ///     Checks the app ownership status for a given Steam ID.  
+    /// </summary>
+    /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
+    /// <param name="steamId">SteamID of user.</param>
+    /// <returns>An instance of <see cref="PublisherAppOwnershipResponse" />.</returns>
+    [Get("/ISteamUser/GetPublisherAppOwnership/v3/")]
+    Task<PublisherAppOwnershipResponse> GetPublisherAppOwnership([AliasAs("key")] string apiKey,
+        [AliasAs("steamid")] string steamId);
 }

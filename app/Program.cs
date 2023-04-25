@@ -25,6 +25,8 @@ ISteamUser steamApi = RestService.For<ISteamUser>("https://partner.steam-api.com
 
 // TODO: implement me!
 
-var result = await steamApi.GetDeletedSteamIDs(apiKey);
+//var result = await steamApi.GetPlayerSummaries(apiKey, new[] { "76561197992990756", "76561197969911571" });
+
+var result = await steamApi.GetPublisherAppOwnership(apiKey, "76561197992990756");
 
 Console.ReadKey();
