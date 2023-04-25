@@ -55,5 +55,26 @@ public interface ISteamUser
     /// <returns>An instance of <see cref="PriceInfoRequest" />.</returns>
     [Get("/ISteamUser/GetAppPriceInfo/v1/")]
     Task<PriceInfoRequest> GetAppPriceInfo([AliasAs("key")] string apiKey, [AliasAs("steamid")] string steamId,
-        [AliasAs("appids")] [Query(CollectionFormat.Csv)] string[] appIds);
+        [AliasAs("appids")] [Query(CollectionFormat.Csv)]
+        string[] appIds);
+
+    /// <summary>
+    ///     You can use GetDeletedSteamIDs to retrieve a list of deleted accounts that owned your game(s) before deletion. This
+    ///     API was created to allow for the deletion of user related data for GDPR and other personal information related
+    ///     purposes.
+    /// </summary>
+    /// <remarks>
+    ///     The provided Steamworks Publisher Key is used for both authentication and to generate the list of appids to
+    ///     check against.
+    /// </remarks>
+    /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
+    /// <param name="rowVersion">
+    ///     An unsigned 64-bit value used to page through deleted accounts. Pass 0 when calling this API
+    ///     for the first time, then pass the value returned from the previous call for each additional request. This value
+    ///     will need to be stored on your server for future calls.
+    /// </param>
+    /// <returns>An instance of <see cref="DeletedSteamIdsResponse" />.</returns>
+    [Get("/ISteamUser/GetDeletedSteamIDs/v1/")]
+    Task<DeletedSteamIdsResponse> GetDeletedSteamIDs([AliasAs("key")] string apiKey,
+        [AliasAs("rowversion")] ulong rowVersion = 0);
 }

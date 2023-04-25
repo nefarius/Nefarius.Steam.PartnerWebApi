@@ -25,6 +25,6 @@ ISteamUser steamApi = RestService.For<ISteamUser>("https://partner.steam-api.com
 
 // TODO: implement me!
 
-var result = await steamApi.GetAppPriceInfo(apiKey, "76561199498550192", new string[] { "1812620", "2345650" });
+var result = await steamApi.GetDeletedSteamIDs(apiKey);
 
 Console.ReadKey();
