@@ -26,9 +26,3 @@ jobs:
       run: dotnet build --no-restore
     - name: Pack
       run: dotnet pack -c Release --no-restore
-    - name: publish on version change
-      id: publish_nuget
-      uses: tedd/publish-nuget-neo@v1
-      with:
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-        PROJECT_FILE_PATH: src/Nefarius.Steam.PartnerWebApi.csproj
