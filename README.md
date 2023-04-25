@@ -8,7 +8,7 @@ Steamworks Web API wrapper for .NET using [Refit](https://github.com/reactiveui/
 
 ## About
 
-TBD
+*Very* work in progress, use with care 🔥
 
 ## Example
 
