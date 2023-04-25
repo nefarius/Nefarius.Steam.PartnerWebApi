@@ -31,3 +31,4 @@ bool ownsApp = ownership.AppOwnership.OwnsApp;
 
 - [Refit](https://github.com/reactiveui/refit)
 - [Steamworks Web API Reference](https://partner.steamgames.com/doc/webapi)
+- [Steam Web API](https://developer.valvesoftware.com/wiki/Steam_Web_API)
