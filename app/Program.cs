@@ -27,6 +27,6 @@ ISteamUser steamApi = RestService.For<ISteamUser>("https://partner.steam-api.com
 
 //var result = await steamApi.GetPlayerSummaries(apiKey, new[] { "76561197992990756", "76561197969911571" });
 
-var result = await steamApi.GetPublisherAppOwnership(apiKey, "76561197992990756");
+var result = await steamApi.GetUserGroupList(apiKey, "76561197992990756");
 
 Console.ReadKey();

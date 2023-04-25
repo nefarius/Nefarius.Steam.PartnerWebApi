@@ -81,7 +81,13 @@ public interface ISteamUser
     Task<DeletedSteamIdsResponse> GetDeletedSteamIDs([AliasAs("key")] string apiKey,
         [AliasAs("rowversion")] ulong rowVersion = 0);
 
-    // TODO: finish me!
+    /// <summary>
+    ///     TODO: can't test currently
+    /// </summary>
+    /// <param name="apiKey"></param>
+    /// <param name="steamId"></param>
+    /// <param name="relationship"></param>
+    /// <returns></returns>
     [Get("/ISteamUser/GetFriendList/v1/")]
     Task<dynamic> GetFriendList([AliasAs("key")] string apiKey, [AliasAs("steamid")] string steamId,
         [AliasAs("relationship")] FriendListRelationship relationship = FriendListRelationship.Friend);
@@ -115,4 +121,22 @@ public interface ISteamUser
     [Get("/ISteamUser/GetPublisherAppOwnership/v3/")]
     Task<PublisherAppOwnershipResponse> GetPublisherAppOwnership([AliasAs("key")] string apiKey,
         [AliasAs("steamid")] string steamId);
+
+    /// <summary>
+    ///     TODO: can't test currently
+    /// </summary>
+    /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
+    /// <param name="steamId">SteamID of user.</param>
+    /// <returns></returns>
+    [Get("/ISteamUser/GetUserGroupList/v1/")]
+    Task<dynamic> GetUserGroupList([AliasAs("key")] string apiKey, [AliasAs("steamid")] string steamId);
+
+    /// <summary>
+    ///     TODO: can't test currently
+    /// </summary>
+    /// <param name="apiKey"></param>
+    /// <param name="vanityUrl"></param>
+    /// <returns></returns>
+    [Get("/ISteamUser/ResolveVanityURL/v1/")]
+    Task<dynamic> ResolveVanityURL([AliasAs("key")] string apiKey, [AliasAs("vanityurl")] Uri vanityUrl);
 }
