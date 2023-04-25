@@ -45,4 +45,15 @@ public interface ISteamUser
     Task<OwnershipChangesRequest> GetPublisherAppOwnershipChanges([AliasAs("key")] string apiKey,
         [AliasAs("packagerowversion")] ulong packageRowVersion = 0,
         [AliasAs("cdkeyrowversion")] ulong cdKeyRowVersion = 0);
+
+    /// <summary>
+    ///     Gets the pricing information for one or more apps.
+    /// </summary>
+    /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
+    /// <param name="steamId">SteamID of user.</param>
+    /// <param name="appIds">Array of app IDs (max: 100).</param>
+    /// <returns>An instance of <see cref="PriceInfoRequest" />.</returns>
+    [Get("/ISteamUser/GetAppPriceInfo/v1/")]
+    Task<PriceInfoRequest> GetAppPriceInfo([AliasAs("key")] string apiKey, [AliasAs("steamid")] string steamId,
+        [AliasAs("appids")] [Query(CollectionFormat.Csv)] string[] appIds);
 }
