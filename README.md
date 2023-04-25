@@ -10,6 +10,10 @@ Steamworks Web API wrapper for .NET using [Refit](https://github.com/reactiveui/
 
 *Very* work in progress, use with care 🔥
 
+A thin dotnet wrapper library for for the Steamworks Web API that will grow with the author's needs.
+
+Currently only covers the `ISteamUser` interface. 
+
 ## Example
 
 ```csharp
