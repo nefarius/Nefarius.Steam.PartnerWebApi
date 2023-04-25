@@ -26,3 +26,8 @@ AppOwnershipResponse ownership = await steamApi.CheckAppOwnership(apiKey, "76561
 
 bool ownsApp = ownership.AppOwnership.OwnsApp;
 ```
+
+## 3rd party credits
+
+- [Refit](https://github.com/reactiveui/refit)
+- [Steamworks Web API Reference](https://partner.steamgames.com/doc/webapi)
