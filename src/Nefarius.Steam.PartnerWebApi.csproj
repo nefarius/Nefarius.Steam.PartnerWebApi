@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Refit" Version="7.1.0" />
+    <PackageReference Include="Refit" Version="7.1.2" />
   </ItemGroup>
 
   <Import Project="$(SolutionDir)CommonProjectProperties.targets" />
