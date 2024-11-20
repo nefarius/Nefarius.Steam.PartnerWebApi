@@ -7,9 +7,9 @@
         <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Version>1.0.1-pre</Version>
-        <RepositoryUrl>https://github.com/nefarius/Nefarius.NuGet.Template</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/nefarius/Nefarius.NuGet.Template</PackageProjectUrl>
-        <Description>Summary. README takes priority over this but nice to have.</Description>
+        <RepositoryUrl>https://github.com/nefarius/Nefarius.Steam.PartnerWebApi</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/nefarius/Nefarius.Steam.PartnerWebApi</PackageProjectUrl>
+        <Description>Steamworks Web API wrapper for .NET using Refit.</Description>
     </PropertyGroup>
 
     <PropertyGroup>
