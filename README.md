@@ -7,9 +7,10 @@
 
 Steamworks Web API wrapper for .NET using [Refit](https://github.com/reactiveui/refit).
 
-## About
+> [!IMPORTANT]
+> This project is still evolving, so API-breaking changes might occur each update!
 
-*Very* work in progress, use with care 🔥
+## About
 
 A thin dotnet wrapper library for the Steamworks Web API that will grow with the author's needs.
 
