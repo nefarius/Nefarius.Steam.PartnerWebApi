@@ -17,12 +17,18 @@ public sealed class App
 
     [JsonPropertyName("timestamp")]
     public DateTime Timestamp { get; set; }
+    
+    [JsonPropertyName("timeexpired")]
+    public string TimeExpired { get; set; }
 
     [JsonPropertyName("ownersteamid")]
     public string OwnerSteamId { get; set; }
 
     [JsonPropertyName("sitelicense")]
     public bool Sitelicense { get; set; }
+    
+    [JsonPropertyName("usercanceled")]
+    public bool UserCanceled { get; set; }
 
     [JsonPropertyName("timedtrial")]
     public bool TimedTrial { get; set; }

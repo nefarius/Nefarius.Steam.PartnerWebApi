@@ -118,7 +118,7 @@ public interface ISteamUser
     /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
     /// <param name="steamId">SteamID of user.</param>
     /// <returns>An instance of <see cref="PublisherAppOwnershipResponse" />.</returns>
-    [Get("/ISteamUser/GetPublisherAppOwnership/v3/")]
+    [Get("/ISteamUser/GetPublisherAppOwnership/v5/")]
     Task<PublisherAppOwnershipResponse> GetPublisherAppOwnership([AliasAs("key")] string apiKey,
         [AliasAs("steamid")] string steamId);
 
