@@ -27,12 +27,6 @@ with a Steam account can register. Do not expect this library to work with such 
 
 [Link to API docs](docs/index.md).
 
-### Generating documentation
-
-- `dotnet build -c:Release`
-- `dotnet tool install --global Nefarius.Tools.XMLDoc2Markdown`
-- `xmldoc2md .\bin\netstandard2.0\Nefarius.Steam.PartnerWebApi.dll .\docs\`
-
 ## Example
 
 ```csharp
