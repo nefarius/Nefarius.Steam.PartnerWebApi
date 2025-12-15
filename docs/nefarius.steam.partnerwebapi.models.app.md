@@ -70,6 +70,16 @@ public bool TimedTrial { get; set; }
 
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
 
+### <a id="properties-timeexpired"/>**TimeExpired**
+
+```csharp
+public string TimeExpired { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+
 ### <a id="properties-timestamp"/>**Timestamp**
 
 ```csharp
@@ -79,6 +89,16 @@ public DateTime Timestamp { get; set; }
 #### Property Value
 
 [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)<br>
+
+### <a id="properties-usercanceled"/>**UserCanceled**
+
+```csharp
+public bool UserCanceled { get; set; }
+```
+
+#### Property Value
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
 
 ## Constructors
 
