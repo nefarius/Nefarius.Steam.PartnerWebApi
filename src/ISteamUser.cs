@@ -113,13 +113,23 @@ public interface ISteamUser
         [AliasAs("steamids")] [Query(CollectionFormat.Csv)] string[] steamIds);
 
     /// <summary>
-    ///     Checks the app ownership status for a given Steam ID.  
+    ///     Checks the app ownership status for a given Steam ID.
     /// </summary>
     /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
     /// <param name="steamId">SteamID of user.</param>
     /// <returns>An instance of <see cref="PublisherAppOwnershipResponse" />.</returns>
     [Get("/ISteamUser/GetPublisherAppOwnership/v3/")]
     Task<PublisherAppOwnershipResponse> GetPublisherAppOwnership([AliasAs("key")] string apiKey,
+        [AliasAs("steamid")] string steamId);
+
+    /// <summary>
+    ///     Checks the app ownership status for a given Steam ID using the latest version of the endpoint.
+    /// </summary>
+    /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
+    /// <param name="steamId">SteamID of user.</param>
+    /// <returns>An instance of <see cref="PublisherAppOwnershipV5Response" />.</returns>
+    [Get("/ISteamUser/GetPublisherAppOwnership/v5/")]
+    Task<PublisherAppOwnershipV5Response> GetPublisherAppOwnershipV5([AliasAs("key")] string apiKey,
         [AliasAs("steamid")] string steamId);
 
     /// <summary>

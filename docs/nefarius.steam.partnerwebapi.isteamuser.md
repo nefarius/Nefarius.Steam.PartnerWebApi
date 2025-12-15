@@ -165,6 +165,26 @@ SteamID of user.
 
 An instance of [PublisherAppOwnershipResponse](./nefarius.steam.partnerwebapi.models.publisherappownershipresponse.md).
 
+### <a id="methods-getpublisherappownershipv5"/>**GetPublisherAppOwnershipV5(String, String)**
+
+Checks the app ownership status for a given Steam ID using the latest version of the endpoint.
+
+```csharp
+Task<PublisherAppOwnershipV5Response> GetPublisherAppOwnershipV5(string apiKey, string steamId)
+```
+
+#### Parameters
+
+`apiKey` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+Steamworks Web API publisher authentication key.
+
+`steamId` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+SteamID of user.
+
+#### Returns
+
+An instance of [PublisherAppOwnershipV5Response](./nefarius.steam.partnerwebapi.models.publisherappownershipv5response.md).
+
 ### <a id="methods-getpublisherappownershipchanges"/>**GetPublisherAppOwnershipChanges(String, UInt64, UInt64)**
 
 This method can be used to determine what SteamIDs have ownership changes starting from a particular package or key
