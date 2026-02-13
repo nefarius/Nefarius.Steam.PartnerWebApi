@@ -12,23 +12,7 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 
 ## Properties
 
-### **Result**
-
-Status of the authentication (e.g. "OK").
-
-```csharp
-public string Result { get; set; }
-```
-
-### **SteamId**
-
-The 64-bit SteamID of the authenticated user.
-
-```csharp
-public string SteamId { get; set; }
-```
-
-### **OwnerSteamId**
+### <a id="properties-ownersteamid"/>**OwnerSteamId**
 
 The 64-bit SteamID of the game owner (may differ from SteamId if using Steam Family Sharing).
 
@@ -36,7 +20,47 @@ The 64-bit SteamID of the game owner (may differ from SteamId if using Steam Fam
 public string OwnerSteamId { get; set; }
 ```
 
-### **VacBanned**
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+
+### <a id="properties-publisherbanned"/>**PublisherBanned**
+
+Whether the user has a publisher ban.
+
+```csharp
+public bool PublisherBanned { get; set; }
+```
+
+#### Property Value
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
+
+### <a id="properties-result"/>**Result**
+
+Status of the authentication (e.g. "OK").
+
+```csharp
+public string Result { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+
+### <a id="properties-steamid"/>**SteamId**
+
+The 64-bit SteamID of the authenticated user.
+
+```csharp
+public string SteamId { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+
+### <a id="properties-vacbanned"/>**VacBanned**
 
 Whether the user has a VAC ban.
 
@@ -44,10 +68,14 @@ Whether the user has a VAC ban.
 public bool VacBanned { get; set; }
 ```
 
-### **PublisherBanned**
+#### Property Value
 
-Whether the user has a publisher ban.
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
+
+## Constructors
+
+### <a id="constructors-.ctor"/>**AuthenticateUserTicketParams()**
 
 ```csharp
-public bool PublisherBanned { get; set; }
+public AuthenticateUserTicketParams()
 ```
