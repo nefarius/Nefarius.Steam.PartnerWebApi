@@ -1,11 +1,8 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace Nefarius.Steam.PartnerWebApi.Models;
 
-/// <summary>
-///     The user's current status.
-/// </summary>
-/// <summary>Steam persona (online) state.</summary>
+/// <summary>The user's current status — Steam persona state.</summary>
 public enum PlayerSummariesPersonaState
 {
     /// <summary>Offline.</summary>

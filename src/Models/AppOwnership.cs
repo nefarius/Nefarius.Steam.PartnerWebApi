@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json.Serialization;
 
 namespace Nefarius.Steam.PartnerWebApi.Models;
@@ -16,7 +16,7 @@ public sealed class AppOwnership
     public bool OwnsApp { get; set; }
 
     /// <summary>
-    ///     Whether the user permanetly owns your app. Not true for ownership via Family Sharing, free weekends, or site
+    ///     Whether the user permanently owns your app. Not true for ownership via Family Sharing, free weekends, or site
     ///     license.
     /// </summary>
     [JsonPropertyName("permanent")]
