@@ -26,7 +26,8 @@ public interface ISteamUserAuth
     /// <returns>An instance of <see cref="AuthenticateUserResponse" />.</returns>
     [Post("/ISteamUserAuth/AuthenticateUser/v1/")]
     Task<AuthenticateUserResponse> AuthenticateUser(
-        [Body(BodySerializationMethod.UrlEncoded)] AuthenticateUserRequest request);
+        [Body(BodySerializationMethod.UrlEncoded)]
+        AuthenticateUserRequest request);
 
     /// <summary>
     ///     Validates an auth ticket from GetAuthTicketForWebApi and returns the user's 64-bit SteamID if valid. The ticket

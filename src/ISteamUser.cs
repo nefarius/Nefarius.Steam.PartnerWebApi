@@ -100,7 +100,8 @@ public interface ISteamUser
     /// <returns>An instance of <see cref="PlayerBansResponse" />.</returns>
     [Get("/ISteamUser/GetPlayerBans/v1/")]
     Task<PlayerBansResponse> GetPlayerBans([AliasAs("key")] string apiKey,
-        [AliasAs("steamids")] [Query(CollectionFormat.Csv)] string[] steamIds);
+        [AliasAs("steamids")] [Query(CollectionFormat.Csv)]
+        string[] steamIds);
 
     /// <summary>
     ///     Returns basic profile information for a list of 64-bit Steam IDs.
@@ -110,10 +111,11 @@ public interface ISteamUser
     /// <returns>An instance of <see cref="PlayerSummariesResponse" />.</returns>
     [Get("/ISteamUser/GetPlayerSummaries/v2/")]
     Task<PlayerSummariesResponse> GetPlayerSummaries([AliasAs("key")] string apiKey,
-        [AliasAs("steamids")] [Query(CollectionFormat.Csv)] string[] steamIds);
+        [AliasAs("steamids")] [Query(CollectionFormat.Csv)]
+        string[] steamIds);
 
     /// <summary>
-    ///     Checks the app ownership status for a given Steam ID.  
+    ///     Checks the app ownership status for a given Steam ID.
     /// </summary>
     /// <param name="apiKey">Steamworks Web API publisher authentication key.</param>
     /// <param name="steamId">SteamID of user.</param>
