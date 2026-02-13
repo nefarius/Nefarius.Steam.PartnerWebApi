@@ -124,11 +124,11 @@ public sealed class PlayerSummariesPlayer
 
     /// <summary>Real name (if set and visible).</summary>
     [JsonPropertyName("realname")]
-    public string RealName { get; set; } = null!;
+    public string? RealName { get; set; }
 
     /// <summary>Primary clan ID.</summary>
     [JsonPropertyName("primaryclanid")]
-    public string PrimaryClanId { get; set; } = null!;
+    public string? PrimaryClanId { get; set; }
 
     /// <summary>Account creation time (Unix timestamp).</summary>
     [JsonPropertyName("timecreated")]
