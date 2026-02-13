@@ -19,7 +19,7 @@ public interface ISteamUser
     /// <param name="ownerSteamId">Steamworks Web API publisher authentication key.</param>
     /// <param name="appId">AppID to check for ownership.</param>
     /// <returns>An instance of <see cref="AppOwnershipResponse" />.</returns>
-    [Get("/ISteamUser/CheckAppOwnership/v2/")]
+    [Get("/ISteamUser/CheckAppOwnership/v4/")]
     Task<AppOwnershipResponse> CheckAppOwnership([AliasAs("key")] string apiKey,
         [AliasAs("steamid")] string ownerSteamId, [AliasAs("appid")] string appId);
 
