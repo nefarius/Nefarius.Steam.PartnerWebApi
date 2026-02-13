@@ -12,7 +12,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 
 ### <a id="properties-avatar"/>**Avatar**
 
-The full URL of the player's 32x32px avatar. If the user hasn't configured an avatar, this will be the default avatar.
+The full URL of the player's 32x32px avatar. If the user hasn't configured an avatar, this will be the default ?
+ avatar.
 
 ```csharp
 public Uri Avatar { get; set; }
@@ -20,11 +21,12 @@ public Uri Avatar { get; set; }
 
 #### Property Value
 
-[Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri)<br>
+Uri<br>
 
 ### <a id="properties-avatarfull"/>**AvatarFull**
 
-The full URL of the player's 184x184px avatar. If the user hasn't configured an avatar, this will be the default avatar.
+The full URL of the player's 184x184px avatar. If the user hasn't configured an avatar, this will be the default ?
+ avatar.
 
 ```csharp
 public Uri AvatarFull { get; set; }
@@ -32,7 +34,7 @@ public Uri AvatarFull { get; set; }
 
 #### Property Value
 
-[Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri)<br>
+Uri<br>
 
 ### <a id="properties-avatarhash"/>**AvatarHash**
 
@@ -48,7 +50,8 @@ public string AvatarHash { get; set; }
 
 ### <a id="properties-avatarmedium"/>**AvatarMedium**
 
-The full URL of the player's 64x64px avatar. If the user hasn't configured an avatar, this will be the default avatar.
+The full URL of the player's 64x64px avatar. If the user hasn't configured an avatar, this will be the default ?
+ avatar.
 
 ```csharp
 public Uri AvatarMedium { get; set; }
@@ -56,7 +59,7 @@ public Uri AvatarMedium { get; set; }
 
 #### Property Value
 
-[Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri)<br>
+Uri<br>
 
 ### <a id="properties-communityvisibilitystate"/>**CommunityVisibilityState**
 
@@ -132,7 +135,7 @@ public Uri ProfileUrl { get; set; }
 
 #### Property Value
 
-[Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri)<br>
+Uri<br>
 
 ### <a id="properties-realname"/>**RealName**
 
@@ -146,7 +149,7 @@ public string RealName { get; set; }
 
 ### <a id="properties-steamid"/>**SteamId**
 
-64-bit Steam ID of the user.
+64bit SteamID of the user
 
 ```csharp
 public string SteamId { get; set; }

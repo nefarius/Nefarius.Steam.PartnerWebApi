@@ -24,7 +24,7 @@ Task<AppOwnershipResponse> CheckAppOwnership(string apiKey, string ownerSteamId,
 Steamworks Web API publisher authentication key.
 
 `ownerSteamId` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
-Steam ID of the user to check ownership for.
+Steamworks Web API publisher authentication key.
 
 `appId` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
 AppID to check for ownership.
@@ -96,13 +96,10 @@ Task<Object> GetFriendList(string apiKey, string steamId, FriendListRelationship
 #### Parameters
 
 `apiKey` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
-Steamworks Web API publisher authentication key.
 
 `steamId` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
-Steam ID of the user whose friend list to retrieve.
 
 `relationship` [FriendListRelationship](./nefarius.steam.partnerwebapi.models.friendlistrelationship.md)<br>
-The type of relationship to filter by (e.g. friend, all).
 
 #### Returns
 
@@ -228,10 +225,8 @@ Task<Object> ResolveVanityURL(string apiKey, Uri vanityUrl)
 #### Parameters
 
 `apiKey` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
-Steamworks Web API publisher authentication key.
 
-`vanityUrl` [Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri)<br>
-The vanity URL (e.g. Steam community profile custom URL) to resolve to a Steam ID.
+`vanityUrl` Uri<br>
 
 #### Returns
 
