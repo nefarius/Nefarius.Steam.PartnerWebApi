@@ -14,7 +14,7 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 
 ### <a id="properties-ownersteamid"/>**OwnerSteamId**
 
-The 64-bit SteamID of the game owner (may differ from SteamId if using Steam Family Sharing).
+The 64-bit SteamID of the game owner (may differ from steamid if using Steam Family Sharing).
 
 ```csharp
 public string OwnerSteamId { get; set; }
