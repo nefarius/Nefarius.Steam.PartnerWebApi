@@ -16,7 +16,8 @@ public sealed class AppOwnership
     public bool OwnsApp { get; set; }
 
     /// <summary>
-    ///     Whether the user permanetly owns your app. Not true for ownership via Family Sharing, free weekends, or site license.
+    ///     Whether the user permanetly owns your app. Not true for ownership via Family Sharing, free weekends, or site
+    ///     license.
     /// </summary>
     [JsonPropertyName("permanent")]
     public bool Permanent { get; set; }
@@ -39,9 +40,11 @@ public sealed class AppOwnership
     [JsonPropertyName("sitelicense")]
     public bool SiteLicense { get; set; }
 
+    /// <summary>Indicates if this is a timed trial.</summary>
     [JsonPropertyName("timedtrial")]
     public bool TimedTrial { get; set; }
 
+    /// <summary>Result code from the API.</summary>
     [JsonPropertyName("result")]
     public string Result { get; set; } = null!;
 }
@@ -53,6 +56,7 @@ public sealed class AppOwnership
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
 public sealed class AppOwnershipResponse
 {
+    /// <summary>App ownership details.</summary>
     [JsonPropertyName("appownership")]
     public AppOwnership AppOwnership { get; set; } = null!;
 }
