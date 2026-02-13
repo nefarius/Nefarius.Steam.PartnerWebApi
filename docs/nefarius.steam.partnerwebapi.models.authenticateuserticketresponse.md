@@ -12,10 +12,22 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 
 ## Properties
 
-### **Response**
+### <a id="properties-response"/>**Response**
 
 The response parameters containing the authenticated user's SteamID and related data.
 
 ```csharp
 public AuthenticateUserTicketResponseInner Response { get; set; }
+```
+
+#### Property Value
+
+[AuthenticateUserTicketResponseInner](./nefarius.steam.partnerwebapi.models.authenticateuserticketresponseinner.md)<br>
+
+## Constructors
+
+### <a id="constructors-.ctor"/>**AuthenticateUserTicketResponse()**
+
+```csharp
+public AuthenticateUserTicketResponse()
 ```

@@ -3,6 +3,7 @@
 ## Namespace Nefarius.Steam.PartnerWebApi
 
 - [ISteamUser](./nefarius.steam.partnerwebapi.isteamuser.md)
+
 - [ISteamUserAuth](./nefarius.steam.partnerwebapi.isteamuserauth.md)
 
 ## Namespace Nefarius.Steam.PartnerWebApi.Models
@@ -10,6 +11,8 @@
 - [App](./nefarius.steam.partnerwebapi.models.app.md)
 
 - [AppOwnership](./nefarius.steam.partnerwebapi.models.appownership.md)
+
+- [AppOwnershipResponse](./nefarius.steam.partnerwebapi.models.appownershipresponse.md)
 
 - [AuthenticateUserRequest](./nefarius.steam.partnerwebapi.models.authenticateuserrequest.md)
 
@@ -20,8 +23,6 @@
 - [AuthenticateUserTicketResponse](./nefarius.steam.partnerwebapi.models.authenticateuserticketresponse.md)
 
 - [AuthenticateUserTicketResponseInner](./nefarius.steam.partnerwebapi.models.authenticateuserticketresponseinner.md)
-
-- [AppOwnershipResponse](./nefarius.steam.partnerwebapi.models.appownershipresponse.md)
 
 - [CommunityVisibilityState](./nefarius.steam.partnerwebapi.models.communityvisibilitystate.md)
 

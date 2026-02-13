@@ -12,10 +12,22 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 
 ## Properties
 
-### **Params**
+### <a id="properties-params"/>**Params**
 
 Authentication result parameters.
 
 ```csharp
 public AuthenticateUserTicketParams Params { get; set; }
+```
+
+#### Property Value
+
+[AuthenticateUserTicketParams](./nefarius.steam.partnerwebapi.models.authenticateuserticketparams.md)<br>
+
+## Constructors
+
+### <a id="constructors-.ctor"/>**AuthenticateUserTicketResponseInner()**
+
+```csharp
+public AuthenticateUserTicketResponseInner()
 ```
