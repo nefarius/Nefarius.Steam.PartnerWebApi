@@ -30,7 +30,7 @@ public string SteamId { get; set; }
 
 ### **OwnerSteamId**
 
-The 64-bit SteamID of the game owner (may differ from steamid if using Steam Family Sharing).
+The 64-bit SteamID of the game owner (may differ from SteamId if using Steam Family Sharing).
 
 ```csharp
 public string OwnerSteamId { get; set; }

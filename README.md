@@ -39,7 +39,7 @@ string apiKey = "get api key from config file";
 
 ISteamUser steamApi = RestService.For<ISteamUser>("https://partner.steam-api.com");
 
-AppOwnershipResponse ownership = await steamApi.CheckAppOwnership(apiKey, "76561197992990756", "774361");
+AppOwnershipResponse ownership = await steamApi.CheckAppOwnership(apiKey, "76561198472918263", "482910");
 
 bool ownsApp = ownership.AppOwnership.OwnsApp;
 ```

@@ -12,6 +12,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 
 ### <a id="properties-steamid"/>**SteamId**
 
+The 64-bit Steam ID of the user.
+
 ```csharp
 public string SteamId { get; set; }
 ```

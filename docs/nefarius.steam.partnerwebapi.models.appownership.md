@@ -26,7 +26,7 @@ public string OwnerSteamId { get; set; }
 
 ### <a id="properties-ownsapp"/>**OwnsApp**
 
-Indicates if the user is the actual owner or the app.
+Indicates if the user is the actual owner of the app.
 
 ```csharp
 public bool OwnsApp { get; set; }
@@ -38,7 +38,7 @@ public bool OwnsApp { get; set; }
 
 ### <a id="properties-permanent"/>**Permanent**
 
-Whether the user permanetly owns your app. Not true for ownership via Family Sharing, free weekends, or site license.
+Whether the user permanently owns your app. Not true for ownership via Family Sharing, free weekends, or site license.
 
 ```csharp
 public bool Permanent { get; set; }

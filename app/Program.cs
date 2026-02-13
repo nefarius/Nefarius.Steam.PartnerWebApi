@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 
 using Microsoft.Extensions.Configuration;
 
@@ -25,8 +25,8 @@ ISteamUser steamApi = RestService.For<ISteamUser>("https://partner.steam-api.com
 
 // TODO: implement me!
 
-//var result = await steamApi.GetPlayerSummaries(apiKey, new[] { "76561197992990756", "76561197969911571" });
+//var result = await steamApi.GetPlayerSummaries(apiKey, new[] { "76561198472918263", "76561199284739105" });
 
-var result = await steamApi.GetUserGroupList(apiKey, "76561197992990756");
+var result = await steamApi.GetUserGroupList(apiKey, "76561198472918263");
 
 Console.ReadKey();
