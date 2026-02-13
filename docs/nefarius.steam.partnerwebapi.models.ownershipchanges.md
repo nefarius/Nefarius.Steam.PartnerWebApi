@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Ownership changes from GetAppOwnershipChanges.
+
 ```csharp
 public class OwnershipChanges
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-cdkeyrowversion"/>**CdKeyRowVersion**
+
+CD key row version for pagination.
 
 ```csharp
 public ulong CdKeyRowVersion { get; set; }
@@ -22,6 +26,8 @@ public ulong CdKeyRowVersion { get; set; }
 
 ### <a id="properties-moredata"/>**MoreData**
 
+Whether more data is available.
+
 ```csharp
 public bool MoreData { get; set; }
 ```
@@ -32,6 +38,8 @@ public bool MoreData { get; set; }
 
 ### <a id="properties-packagerowversion"/>**PackageRowVersion**
 
+Package row version for pagination.
+
 ```csharp
 public ulong PackageRowVersion { get; set; }
 ```
@@ -41,6 +49,8 @@ public ulong PackageRowVersion { get; set; }
 [UInt64](https://docs.microsoft.com/en-us/dotnet/api/system.uint64)<br>
 
 ### <a id="properties-steamids"/>**Steamids**
+
+List of Steam ID entries.
 
 ```csharp
 public List<SteamIdEntry> Steamids { get; set; }

@@ -14,6 +14,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 
 ### <a id="properties-appownership"/>**AppOwnership**
 
+App ownership details.
+
 ```csharp
 public AppOwnership AppOwnership { get; set; }
 ```

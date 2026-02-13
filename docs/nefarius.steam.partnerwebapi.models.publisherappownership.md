@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Publisher app ownership container.
+
 ```csharp
 public sealed class PublisherAppOwnership
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-apps"/>**Apps**
+
+List of app ownership entries.
 
 ```csharp
 public List<App> Apps { get; set; }

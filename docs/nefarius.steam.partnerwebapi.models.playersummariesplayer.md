@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Player summary from GetPlayerSummaries.
+
 ```csharp
 public sealed class PlayerSummariesPlayer
 ```
@@ -63,6 +65,15 @@ Uri<br>
 
 ### <a id="properties-communityvisibilitystate"/>**CommunityVisibilityState**
 
+This represents whether the profile is visible or not, and if it is visible, why you are allowed to see it. Note
+ that because this WebAPI does not use authentication, there are only two possible values returned: 1 - the profile
+ is not visible to you (Private, Friends Only, etc), 3 - the profile is "Public", and the data is visible. Mike
+ Blaszczak's
+ post on Steam forums
+ says, "The community visibility state this API returns is different than the privacy state. It's the effective
+ visibility state from the account making the request to the account being viewed given the requesting
+ account's relationship to the viewed account."
+
 ```csharp
 public CommunityVisibilityState CommunityVisibilityState { get; set; }
 ```
@@ -85,6 +96,8 @@ public string PersonaName { get; set; }
 
 ### <a id="properties-personastate"/>**PersonaState**
 
+Current persona state.
+
 ```csharp
 public PlayerSummariesPersonaState PersonaState { get; set; }
 ```
@@ -95,6 +108,8 @@ public PlayerSummariesPersonaState PersonaState { get; set; }
 
 ### <a id="properties-personastateflags"/>**PersonaStateFlags**
 
+Persona state flags.
+
 ```csharp
 public Nullable<Int32> PersonaStateFlags { get; set; }
 ```
@@ -104,6 +119,8 @@ public Nullable<Int32> PersonaStateFlags { get; set; }
 [Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.nullable-1)<br>
 
 ### <a id="properties-primaryclanid"/>**PrimaryClanId**
+
+Primary clan ID.
 
 ```csharp
 public string PrimaryClanId { get; set; }
@@ -139,6 +156,8 @@ Uri<br>
 
 ### <a id="properties-realname"/>**RealName**
 
+Real name (if set and visible).
+
 ```csharp
 public string RealName { get; set; }
 ```
@@ -160,6 +179,8 @@ public string SteamId { get; set; }
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
 
 ### <a id="properties-timecreated"/>**TimeCreated**
+
+Account creation time (Unix timestamp).
 
 ```csharp
 public Nullable<Int32> TimeCreated { get; set; }

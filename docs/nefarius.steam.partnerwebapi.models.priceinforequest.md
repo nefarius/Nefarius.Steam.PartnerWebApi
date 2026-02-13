@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Request payload for GetPriceInfo.
+
 ```csharp
 public sealed class PriceInfoRequest
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-priceinfo"/>**PriceInfo**
+
+Price info by key.
 
 ```csharp
 public Dictionary<String, PriceInfo> PriceInfo { get; set; }

@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Response wrapper for GetPlayerBans.
+
 ```csharp
 public sealed class PlayerBansResponse
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-players"/>**Players**
+
+List of player ban records.
 
 ```csharp
 public List<Player> Players { get; set; }

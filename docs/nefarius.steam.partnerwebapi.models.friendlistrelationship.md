@@ -2,7 +2,7 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
-Relationship filter
+Relationship filter for friend list.
 
 ```csharp
 public enum FriendListRelationship
@@ -15,3 +15,5 @@ Implements [IComparable](https://docs.microsoft.com/en-us/dotnet/api/system.icom
 
 | Name | Value | Description |
 | --- | --: | --- |
+| All | 0 | All relationships. |
+| Friend | 1 | Friend only. |

@@ -38,7 +38,8 @@ public bool OwnsApp { get; set; }
 
 ### <a id="properties-permanent"/>**Permanent**
 
-Whether the user permanetly owns your app. Not true for ownership via Family Sharing, free weekends, or site license.
+Whether the user permanently owns your app. Not true for ownership via Family Sharing, free weekends, or site
+ license.
 
 ```csharp
 public bool Permanent { get; set; }
@@ -49,6 +50,8 @@ public bool Permanent { get; set; }
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
 
 ### <a id="properties-result"/>**Result**
+
+Result code from the API.
 
 ```csharp
 public string Result { get; set; }
@@ -71,6 +74,8 @@ public bool SiteLicense { get; set; }
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
 
 ### <a id="properties-timedtrial"/>**TimedTrial**
+
+Indicates if this is a timed trial.
 
 ```csharp
 public bool TimedTrial { get; set; }

@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Response wrapper for GetPlayerSummaries.
+
 ```csharp
 public sealed class PlayerSummariesResponse
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-response"/>**Response**
+
+The player summaries response.
 
 ```csharp
 public PlayerSummaries Response { get; set; }

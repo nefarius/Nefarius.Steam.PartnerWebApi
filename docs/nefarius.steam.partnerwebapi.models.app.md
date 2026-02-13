@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+App entry in publisher app ownership.
+
 ```csharp
 public sealed class App
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-appid"/>**AppId**
+
+App ID.
 
 ```csharp
 public int AppId { get; set; }
@@ -22,6 +26,8 @@ public int AppId { get; set; }
 
 ### <a id="properties-ownersteamid"/>**OwnerSteamId**
 
+Owner Steam ID.
+
 ```csharp
 public string OwnerSteamId { get; set; }
 ```
@@ -31,6 +37,8 @@ public string OwnerSteamId { get; set; }
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
 
 ### <a id="properties-ownsapp"/>**OwnsApp**
+
+Whether the user owns the app.
 
 ```csharp
 public bool OwnsApp { get; set; }
@@ -42,6 +50,8 @@ public bool OwnsApp { get; set; }
 
 ### <a id="properties-permanent"/>**Permanent**
 
+Whether ownership is permanent.
+
 ```csharp
 public bool Permanent { get; set; }
 ```
@@ -51,6 +61,8 @@ public bool Permanent { get; set; }
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
 
 ### <a id="properties-sitelicense"/>**Sitelicense**
+
+Whether this is a site license.
 
 ```csharp
 public bool Sitelicense { get; set; }
@@ -62,6 +74,8 @@ public bool Sitelicense { get; set; }
 
 ### <a id="properties-timedtrial"/>**TimedTrial**
 
+Whether this is a timed trial.
+
 ```csharp
 public bool TimedTrial { get; set; }
 ```
@@ -71,6 +85,8 @@ public bool TimedTrial { get; set; }
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
 
 ### <a id="properties-timeexpired"/>**TimeExpired**
+
+When the license expires (if applicable).
 
 ```csharp
 public string TimeExpired { get; set; }
@@ -82,6 +98,8 @@ public string TimeExpired { get; set; }
 
 ### <a id="properties-timestamp"/>**Timestamp**
 
+When the app was acquired.
+
 ```csharp
 public DateTime Timestamp { get; set; }
 ```
@@ -91,6 +109,8 @@ public DateTime Timestamp { get; set; }
 [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)<br>
 
 ### <a id="properties-usercanceled"/>**UserCanceled**
+
+Whether the user canceled.
 
 ```csharp
 public bool UserCanceled { get; set; }

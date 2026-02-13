@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Response wrapper for GetDeletedSteamIds.
+
 ```csharp
 public sealed class DeletedSteamIdsResponse
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-response"/>**Response**
+
+The deleted Steam IDs response.
 
 ```csharp
 public DeletedSteamIds Response { get; set; }

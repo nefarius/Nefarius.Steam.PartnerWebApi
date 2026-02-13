@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Profile configuration state.
+
 ```csharp
 public enum PlayerSummariesProfileState
 ```
@@ -13,3 +15,5 @@ Implements [IComparable](https://docs.microsoft.com/en-us/dotnet/api/system.icom
 
 | Name | Value | Description |
 | --- | --: | --- |
+| Default | 0 | Default. |
+| CommunityProfileConfigured | 1 | Community profile is configured. |

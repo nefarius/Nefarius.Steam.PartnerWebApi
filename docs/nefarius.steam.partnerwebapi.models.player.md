@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Player ban info from GetPlayerBans.
+
 ```csharp
 public sealed class Player
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-communitybanned"/>**CommunityBanned**
+
+Whether the player is community banned.
 
 ```csharp
 public bool CommunityBanned { get; set; }
@@ -22,6 +26,8 @@ public bool CommunityBanned { get; set; }
 
 ### <a id="properties-dayssincelastban"/>**DaysSinceLastBan**
 
+Days since last ban.
+
 ```csharp
 public int DaysSinceLastBan { get; set; }
 ```
@@ -31,6 +37,8 @@ public int DaysSinceLastBan { get; set; }
 [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)<br>
 
 ### <a id="properties-economyban"/>**EconomyBan**
+
+Economy ban type (e.g. none, banned).
 
 ```csharp
 public string EconomyBan { get; set; }
@@ -42,6 +50,8 @@ public string EconomyBan { get; set; }
 
 ### <a id="properties-numberofgamebans"/>**NumberOfGameBans**
 
+Number of game bans.
+
 ```csharp
 public int NumberOfGameBans { get; set; }
 ```
@@ -51,6 +61,8 @@ public int NumberOfGameBans { get; set; }
 [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)<br>
 
 ### <a id="properties-numberofvacbans"/>**NumberOfVACBans**
+
+Number of VAC bans.
 
 ```csharp
 public int NumberOfVACBans { get; set; }
@@ -62,6 +74,8 @@ public int NumberOfVACBans { get; set; }
 
 ### <a id="properties-steamid"/>**SteamId**
 
+Steam ID.
+
 ```csharp
 public string SteamId { get; set; }
 ```
@@ -71,6 +85,8 @@ public string SteamId { get; set; }
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
 
 ### <a id="properties-vacbanned"/>**VACBanned**
+
+Whether the player has VAC bans.
 
 ```csharp
 public bool VACBanned { get; set; }

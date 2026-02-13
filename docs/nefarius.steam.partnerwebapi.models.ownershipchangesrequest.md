@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Request payload for GetAppOwnershipChanges.
+
 ```csharp
 public class OwnershipChangesRequest
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-ownershipchanges"/>**Ownershipchanges**
+
+Ownership changes data.
 
 ```csharp
 public OwnershipChanges Ownershipchanges { get; set; }

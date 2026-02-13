@@ -2,7 +2,7 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
-The user's current status.
+The user's current status — Steam persona state.
 
 ```csharp
 public enum PlayerSummariesPersonaState
@@ -15,3 +15,10 @@ Implements [IComparable](https://docs.microsoft.com/en-us/dotnet/api/system.icom
 
 | Name | Value | Description |
 | --- | --: | --- |
+| Offline | 0 | Offline. |
+| Online | 1 | Online. |
+| Busy | 2 | Busy. |
+| Away | 3 | Away. |
+| Snooze | 4 | Snooze. |
+| LookingToTrade | 5 | Looking to trade. |
+| LookingToPlay | 6 | Looking to play. |

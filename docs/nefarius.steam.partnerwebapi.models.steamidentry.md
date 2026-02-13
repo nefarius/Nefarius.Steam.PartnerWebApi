@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Steam ID entry for ownership changes.
+
 ```csharp
 public class SteamIdEntry
 ```
@@ -11,6 +13,8 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 ## Properties
 
 ### <a id="properties-steamid"/>**SteamId**
+
+Steam ID.
 
 ```csharp
 public string SteamId { get; set; }

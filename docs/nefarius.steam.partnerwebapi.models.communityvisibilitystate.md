@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Steam.PartnerWebApi.Models
 
+Community profile visibility.
+
 ```csharp
 public enum CommunityVisibilityState
 ```
