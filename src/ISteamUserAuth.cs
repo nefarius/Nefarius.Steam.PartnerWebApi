@@ -47,5 +47,5 @@ public interface ISteamUserAuth
         [AliasAs("key")] string apiKey,
         [AliasAs("appid")] uint appId,
         [AliasAs("ticket")] string ticket,
-        [AliasAs("identity")] string identity);
+        [AliasAs("identity")] string? identity = null);
 }
